@@ -12,26 +12,52 @@ section {
 	margin: 0 auto;
 	text-align: center;
 	}
-	
+
 #section_wrap .create_account_form {
 	width: 1024px;
+	margin: 0 auto;
+	}
+
+#section_wrap .create_account_form form {
+	display: block;
 	margin: 0 auto;
 	text-align: center;
 	}
 
-#section_wrap .create_account_form input {
+#section_wrap .create_account_form .field-wrap {
+	position: relative;
+	display: block;
 	width: 300px;
-	margin: 3px;
+	margin: 3px auto;
 	}
 
-#section_wrap .create_account_form select {
-	width: 322px;
-	margin: 3px;
+#section_wrap .create_account_form .field-wrap .err {
+	position: absolute;
+	left: 308px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 220px;
+	color: red !important;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: left;
+	white-space: nowrap;
+	}
+
+#section_wrap .create_account_form .field-wrap .err * {
+	color: red !important;
+	}
+
+
+#section_wrap .create_account_form .field-wrap input,
+#section_wrap .create_account_form .field-wrap select {
+	width: 300px;
 	}
 
 #section_wrap .create_account_form input[type='button'],
 #section_wrap .create_account_form input[type='reset'] {
 	width: 156px;
+	margin: 3px;
 	}
 
 #section_wrap .login {
